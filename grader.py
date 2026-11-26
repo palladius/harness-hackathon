@@ -488,7 +488,7 @@ def format_compare_report(r1: Dict[str, object], r2: Dict[str, object], min_scor
     lines.append(f"| **TOTAL SCORE** | **{r1['score']}/100** | **{r2['score']}/100** | **{sign}{delta}** |")
     lines.append(f"| **Harbor Reward (`>={min_score}`)** | `{rew1}` | `{rew2}` | {'PASS!' if int(r2['score']) >= min_score else 'KEEP LOOPING'} |")
     lines.append(f"| Stack-Agnostic `SPEC.md` | {'Yes' if p1.get('has_spec') else 'No'} | {'Yes' if p2.get('has_spec') else 'No'} | - |")
-    lines.append(f"| `/learn` Memory (`CLAUDE.md`/`SKILL.md`) | {'Yes' if p1.get('has_learn_memory') else 'No'} | {'Yes' if p2.get('has_learn_memory') else 'No'} | - |")
+    lines.append(f"| `/learn` Memory (`AGENTS.md`/`SKILL.md`) | {'Yes' if p1.get('has_learn_memory') else 'No'} | {'Yes' if p2.get('has_learn_memory') else 'No'} | - |")
     return "\n".join(lines)
 
 

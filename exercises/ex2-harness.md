@@ -1,21 +1,15 @@
 # Exercise 2: Round 2 — Post-Riccardo (Harness Tricks + Evals + GitHub @palladius)
 
-> **Audience**: AI Coding Agent (`Claude Code`, `OpenAI Codex`, `Gemini CLI`, `Antigravity`) + Human Cloud Architect.
+> **Audience**: AI Coding Agent (`Antigravity CLI (agy)`, `Gemini CLI`, `Claude Code`, `OpenAI Codex`) + Human Cloud Architect.
 > **Universal Playbook**: Works identically for **Track 0 (`rag`)**, **Track 1 (`arch`)**, OR **Track 2 (`guggu`)**!
 > **Goal**: Rebuild the **exact same track** you did in Round 1 inside **`./round2-post-riccardo/`** using **Uncle Riccardo's Harness Tricks + real Automated Evals (`/goal` Harbor reward = 1.0)**, beat your Pre-Riccardo score objectively, publish your repo to GitHub, and **contact/ping the professor (`@palladius`)**!
 
 ---
 
-## 0. Zero-Clone Fetch & Ground Rules (Post-Riccardo)
+## 0. Local Setup & Ground Rules (Post-Riccardo)
 
-1. Start in a **fresh session** and work strictly inside **`./round2-post-riccardo/`**.
-2. Fetch `grader.py` and the Harbor verifier if not already present:
-   ```bash
-   curl -fsSL https://storage.googleapis.com/palladius-genai-storagify/hslu/2026-11-27-m3-v1.0.2/hackathon/grader.py -o grader.py
-   mkdir -p evals/harbor-task/tests
-   curl -fsSL https://storage.googleapis.com/palladius-genai-storagify/hslu/2026-11-27-m3-v1.0.2/hackathon/evals/harbor-task/tests/test.sh -o evals/harbor-task/tests/test.sh
-   chmod +x evals/harbor-task/tests/test.sh
-   ```
+1. Start in a **fresh session** (e.g. `agy -i "Start Round 2!"`, `gemini`, `codex`, or `claude`) and work strictly inside **`./round2-post-riccardo/`**.
+2. Verify `./grader.py` and `./evals/harbor-task/tests/test.sh` are present and executable (`chmod +x evals/harbor-task/tests/test.sh`). Everything is already bundled offline in this repository!
 3. Do **NOT** copy-paste implementation files from `./round1-pre-riccardo/` -- only inspect `./round1-pre-riccardo/SCORE_ROUND1.txt` so you prevent Round 1 defects by design.
 4. **Separate WHAT from HOW**: Lock a stack-agnostic `./round2-post-riccardo/SPEC.md` (PRD) BEFORE choosing your tech stack and writing code.
 5. Keep **zero hard-coded secrets** anywhere in the repository.
@@ -30,7 +24,7 @@ Walk the human through picking **at least 3 tricks** (Evals + `/goal` is strongl
 - Interview the human **one question at a time** (recommended default first) about every ambiguity, failure mode, refusal rule, and acceptance test until `./round2-post-riccardo/SPEC.md` is locked (zero tech-stack lock-in!).
 
 ### Trick 2: Superpowers (`brainstorming` -> `writing-plans` -> `TDD` -> `verification-before-completion`)
-- Install/enable <https://github.com/obra/superpowers> (Claude Code plugin, or `.agents/skills/` for Codex / Gemini CLI / Antigravity) to enforce Red-Green TDD and proof-before-done.
+- Install/enable <https://github.com/obra/superpowers> (`agy plugin install` / `.agents/skills/` for Antigravity CLI, Gemini CLI, Codex, or Claude Code plugin) to enforce Red-Green TDD and proof-before-done.
 
 ### Trick 3 (MANDATORY EVALS PILLAR): The 3-Tier Eval Chain (Local -> Harbor `/goal` -> `agents-cli`)
 - **What makes Round 2 truly "Post-Riccardo"**: Never stop at manual "vibe checks"! Wire an end-to-end **3-Tier Eval Chain** into your engineering loop:
@@ -55,8 +49,8 @@ Walk the human through picking **at least 3 tricks** (Evals + `/goal` is strongl
   - Article Part 2: <https://ricc.rocks/en/posts/technology/2026-07-03-crescendo-of-agents-part-2/>
   - Public Skill: <https://github.com/palladius/gemini-cli-custom-commands/blob/main/skills/conductor-worktree-hitl/SKILL.md>
 
-### Trick 5: `/learn` (Crystallize Round 1 Mistakes into `CLAUDE.md` / `AGENTS.md` / `SKILL.md`)
-- Take the top 3 bugs/omissions from Round 1 and codify them into `./round2-post-riccardo/AGENTS.md` (and/or `CLAUDE.md` or `.agents/skills/<name>/SKILL.md`) BEFORE final generation. Public catalog: <https://palladius.github.io/skills/>.
+### Trick 5: `/learn` (Crystallize Round 1 Mistakes into `AGENTS.md` / `SKILL.md`)
+- Take the top 3 bugs/omissions from Round 1 and codify them into `./round2-post-riccardo/AGENTS.md` (and/or `.agents/skills/<name>/SKILL.md`) BEFORE final generation. Public catalog: <https://palladius.github.io/skills/>.
 
 ### Trick 6 (Boss Mode): `/swarm` — Builder vs. Adversarial Reviewer
 - Run a second agent (subagent, second terminal, or cross-model `Claude <-> Gemini <-> Codex`) acting as an adversarial **Swiss FINMA Auditor & Principal SRE** attacking `./round2-post-riccardo/` until every critical finding is fixed.
@@ -93,7 +87,7 @@ Write **`./RETRO.md`** (10-15 crisp lines) answering:
      --body "$(cat <<'EOF'
    Hi @palladius! Here is my HSLU Harness Hackathon submission:
    - **Track & Tech Stack**: <Track 0 Swiss RAG / Track 1 Cloud Arch / Track 2 Guggu-Gstaeltli> | <Stack>
-   - **Harness Used**: <Claude Code / OpenAI Codex / Gemini CLI / Antigravity>
+   - **Harness Used**: <Antigravity CLI (agy) / Gemini CLI / Claude Code / OpenAI Codex>
    - **Post-Riccardo Tricks & Evals**: <e.g., /grill-me, Superpowers, /goal Harbor Eval, /learn>
    - **Score Delta**: Pre-Riccardo `XX/100` -> Post-Riccardo `YY/100` (Harbor `reward = 1.0`)
 

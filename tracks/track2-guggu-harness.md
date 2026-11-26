@@ -16,7 +16,7 @@ Build a **Swiss-branded multi-conversation AI Coding UI Harness** satisfying the
 3. **Multi-Conversation Sidebar & Turn State Machine**: Manage `>= 2` parallel conversation threads (`idle` | `working` | `needs_human_turn`).
 4. **Dual Execution Mode**:
    - **100% Offline Mock Swiss-German Agent Mode (REQUIRED)**: Simulates a 2-3s turn (`working -> needs_human_turn`) for zero-cost testing & classroom demos.
-   - **Optional Real Backend Bridge**: Spawn `claude`, `codex`, or `gemini` CLI (or API via environment variables only -- NEVER hardcoded secrets!).
+   - **Optional Real Backend Bridge**: Spawn `agy` (Antigravity CLI), `gemini`, `claude`, or `codex` CLI (or API via environment variables only -- NEVER hardcoded secrets!).
 5. **Signature Feature: Synthesized `"Guggu!"` Cuckoo Chime + Animated Bird**:
    - Whenever **ANY** thread transitions `working -> needs_human_turn` (especially an inactive background tab!), synthesize a two-tone minor-third Cuckoo chime (**`E5 (659 Hz) -> C#5 (554 Hz)`** via Web Audio API `AudioContext` or native audio synth, zero external `.mp3` required!), animate a Cuckoo bird in the header, and optionally fire a desktop notification.
    - Provide a **"Test Guggu!"** button AND a **"Mute / Stumm"** toggle (for open-plan Swiss banks!).

@@ -493,10 +493,10 @@ h1 {
       Pick 1 of 3 difficulty tracks and build it <strong>twice</strong> with your favorite AI harness — <strong>Pre-Riccardo (Blind Exam)</strong> vs. <strong>Post-Riccardo (Superpowers + Evals)</strong> — and prove the score jump!
     </div>
     <div class="pill-row">
+      <span class="pill">Antigravity CLI (agy)</span>
+      <span class="pill">Gemini CLI</span>
       <span class="pill">Claude Code</span>
       <span class="pill">OpenAI Codex</span>
-      <span class="pill">Gemini CLI</span>
-      <span class="pill">Antigravity</span>
       <span class="pill blue">BYOD / Optional Take-Home</span>
     </div>
   </div>
@@ -1511,9 +1511,9 @@ h1 {
 <h1 id="round-1--pre-riccardo-blind-exam-baseline">Round 1 — Pre-Riccardo (Blind Exam Baseline)</h1>
 <div class="sub">20-30 min in <span class="mono-pill">./round1-pre-riccardo/</span> — do NOT read <span class="mono-pill">grader.py</span> first; run it only at the end as a surprise exam!</div>
 <div class="prompt-box red">
-Read https://storage.googleapis.com/palladius-genai-storagify/hslu/2026-11-27-m3-v1.0.2/hackathon/ex1-yolo.md.<br />
-I pick Track &lt;0 (rag) | 1 (arch) | 2 (guggu)&gt;. Complete Round 1 (Pre-Riccardo) in ./round1-pre-riccardo<br />
-using your normal workflow (do NOT peek at grader.py), then run grader.py --track &lt;rag|arch|guggu&gt;.
+git clone https://github.com/palladius/harness-hackathon.git &amp;&amp; cd harness-hackathon<br />
+agy -i "Read exercises/ex1-yolo.md. I pick Track &lt;0 (rag) | 1 (arch) | 2 (guggu)&gt;.<br />
+Complete Round 1 (Pre-Riccardo) in ./round1-pre-riccardo, then run grader.py --track &lt;rag|arch|guggu&gt;."
 </div>
 <div class="grid3">
   <div class="card red">
@@ -2007,9 +2007,9 @@ h1 {
 <h1 id="round-2--post-riccardo-superpowers--evals">Round 2 — Post-Riccardo (Superpowers + Evals)</h1>
 <div class="sub">Fresh session in <span class="mono-pill">./round2-post-riccardo/</span> — separate <span class="mono-pill">SPEC.md</span> from Tech Stack, enable 3+ tricks &amp; loop to <span class="mono-pill">reward = 1.0</span>!</div>
 <div class="prompt-box green">
-Read https://storage.googleapis.com/palladius-genai-storagify/hslu/2026-11-27-m3-v1.0.2/hackathon/ex2-harness.md.<br />
-Rebuild my Track &lt;0|1|2&gt; cleanly in ./round2-post-riccardo using 3+ tricks + automated Evals until Harbor reward = 1.0.<br />
-Run grader.py --compare, write RETRO.md, and help me publish to GitHub + ping @palladius on an Issue!
+agy -i "Read exercises/ex2-harness.md. Rebuild my Track &lt;0|1|2&gt; cleanly in ./round2-post-riccardo<br />
+using 3+ tricks + automated Evals until Harbor reward = 1.0. Run grader.py --compare,<br />
+write RETRO.md, and help me publish to GitHub + ping @palladius on an Issue!"
 </div>
 <div class="grid3">
   <div class="card green">
@@ -2030,7 +2030,7 @@ Run grader.py --compare, write RETRO.md, and help me publish to GitHub + ping @p
   </div>
   <div class="card blue">
     <div class="card-title">/learn (Repo Memory)</div>
-    <div class="card-body">Distill Round 1 blind-exam failures into <span class="mono-pill">CLAUDE.md</span>, <span class="mono-pill">AGENTS.md</span>, or <span class="mono-pill">SKILL.md</span>.</div>
+    <div class="card-body">Distill Round 1 blind-exam failures into <span class="mono-pill">AGENTS.md</span> or <span class="mono-pill">SKILL.md</span>.</div>
   </div>
   <div class="card amber">
     <div class="card-title">/swarm (Adversarial Review)</div>
@@ -2532,7 +2532,7 @@ h1 {
   <div class="card blue">
     <div class="card-title">Zero-Friction Onboarding &amp; @palladius Hand-In</div>
     <ul class="bullet-sm">
-      <li>Repo ships with <span class="mono-pill">AGENTS.md</span> + <span class="mono-pill">CLAUDE.md</span>: clone, type <em>"Start!"</em>, answer <strong>1 personalization question</strong> (Track + your Personal Twist).</li>
+      <li>Repo ships with <span class="mono-pill">AGENTS.md</span> (symlinked): <span class="mono-pill">git clone</span>, run <span class="mono-pill">agy -i "Start!"</span> (or <span class="mono-pill">gemini</span>/<span class="mono-pill">codex</span>/<span class="mono-pill">claude</span>), answer <strong>1 question</strong>.</li>
       <li>Verify <span class="mono-pill">secret_hygiene == 5/5</span>, push <span class="mono-pill">round1-pre-riccardo/</span> + <span class="mono-pill">round2-post-riccardo/</span> + <span class="mono-pill">RETRO.md</span> to GitHub.</li>
       <li>Open a GitHub Issue pinging <strong><span class="mono-pill">@palladius</span></strong> (or share your scoreboard on <strong>LinkedIn</strong>: <span class="mono-pill">linkedin.com/in/riccardocarlesso</span>).</li>
     </ul>
@@ -3019,12 +3019,12 @@ h1 {
   <div>
     <ul class="link-list">
       <li>
-        <strong>Hackathon Hub (3 Tracks · 1-Click Copy Prompts · Harbor Grader)</strong>
-        <a class="link-url" href="https://storage.googleapis.com/palladius-genai-storagify/hslu/2026-11-27-m3-v1.0.2/hackathon.html">storage.googleapis.com/.../hslu/2026-11-27-m3-v1.0.2/hackathon.html</a>
+        <strong>GitHub Starter Repo (Clone Offline: 10 Swiss PDFs · Grader · AGENTS.md)</strong>
+        <a class="link-url" href="https://github.com/palladius/harness-hackathon">github.com/palladius/harness-hackathon</a>
       </li>
       <li>
-        <strong>Full Target Architecture Spec (CloudArchDraw in respec)</strong>
-        <a class="link-url" href="https://github.com/palladius/respec/tree/main/specs/apps/cloud-arch-draw">github.com/palladius/respec/tree/main/specs/apps/cloud-arch-draw</a>
+        <strong>Live Web Hub (Browser Preview · 1-Click Copy Prompts · 6-Slide Deck)</strong>
+        <a class="link-url" href="https://storage.googleapis.com/palladius-genai-storagify/hslu/2026-11-27-m3-v1.0.2/hackathon.html">storage.googleapis.com/.../hslu/2026-11-27-m3-v1.0.2/hackathon.html</a>
       </li>
       <li>
         <strong>Conductor + Worktrees + GitHub Issues + HITL Article</strong>

@@ -1,6 +1,6 @@
 # AGENTS.md — HSLU Harness Hackathon Autopilot
 
-Welcome, AI Coding Agent (`Claude Code`, `OpenAI Codex`, `Gemini CLI`, or `Antigravity`)!
+Welcome, AI Coding Agent (`Antigravity CLI (agy)`, `Gemini CLI`, `Claude Code`, or `OpenAI Codex`)!
 You are guiding a Cloud Architect / Engineer through the **HSLU Harness Hackathon** (**3 Difficulty Tracks x 2 Rounds: Pre-Riccardo vs. Post-Riccardo**).
 
 ---

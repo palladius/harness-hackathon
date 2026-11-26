@@ -2,6 +2,12 @@
 
 All notable changes to `harness-hackathon` are documented here.
 
+## [0.4.2] - 2026-11-26
+
+- Made `AGENTS.md` the single canonical harness instruction file; replaced standalone `CLAUDE.md` and `GEMINI.md` files with thin relative symlinks (`CLAUDE.md -> AGENTS.md`, `GEMINI.md -> AGENTS.md`).
+- Promoted **Antigravity CLI (`agy`)** first-class quick-start & session tips alongside `gemini`, `codex`, and `claude` across `README.md`, `AGENTS.md`, exercises, Track 2, and the 6-slide HTML deck.
+- Made all exercises and Track 0 docs 100% self-contained & offline-first (referencing the 10 bundled Swiss PDFs in `corpus/swiss-stories/` directly rather than asking cloned users to `curl` from external storage).
+
 ## [0.4.1] - 2026-11-26
 
 - Pre-publish OSS code review & security hardening:

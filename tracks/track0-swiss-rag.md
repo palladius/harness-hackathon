@@ -6,11 +6,10 @@
 
 ---
 
-## 1. Zero-Clone Corpus Download (`10 Swiss PDFs` + `golden_qa.json`)
+## 1. Bundled Offline Corpus (`corpus/swiss-stories/` — Already in This Repo!)
 
-Base URL: `https://storage.googleapis.com/palladius-genai-storagify/hslu/2026-11-27-m3-v1.0.2/hackathon/corpus/swiss-stories/`
-
-10 Public-Domain Swiss Literature & Lore PDFs:
+All **10 PDFs + `golden_qa.json`** are checked directly into [`corpus/swiss-stories/`](../corpus/swiss-stories/) (~44 KB total, 100% offline-ready after `git clone`!).
+Each file is a real, parseable 1-page PDF (generated from concise public-domain summaries of Swiss classics and historical chronicles — zero copyright risk, instant `pypdf`/`pdftotext` ingestion; feel free to add longer Project Gutenberg PDFs as an extra stretch goal!):
 - `01_heidi_alps_mayenfeld.pdf` (Johanna Spyri, *Heidi* -- Alp-Oehi, Schwaenli & Baerli)
 - `02_heidi_frankfurt_clara.pdf` (*Heidi* -- Frankfurt, Doctor Classen, Clara)
 - `03_william_tell_altdorf_apple.pdf` (Friedrich Schiller, *Wilhelm Tell* -- 80 paces, Altdorf)
