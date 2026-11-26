@@ -1,0 +1,126 @@
+{
+  "dataset_name": "swiss-stories-10pdf-golden-v1",
+  "description": "10 grounded factual questions + 3 unanswerable anti-hallucination traps over the 10 Swiss PDFs.",
+  "questions": [
+    {
+      "id": "Q01",
+      "question": "What are the names of Alp-Oehi's two goats in Heidi?",
+      "expected_doc": "01_heidi_alps_mayenfeld.pdf",
+      "expected_keywords": [
+        "Schwaenli",
+        "Baerli"
+      ],
+      "answerable": true
+    },
+    {
+      "id": "Q02",
+      "question": "Why did Doctor Classen insist that Heidi leave Frankfurt immediately?",
+      "expected_doc": "02_heidi_frankfurt_clara.pdf",
+      "expected_keywords": [
+        "homesickness",
+        "sleepwalking"
+      ],
+      "answerable": true
+    },
+    {
+      "id": "Q03",
+      "question": "From how many paces did William Tell have to shoot the apple off his son Walter's head?",
+      "expected_doc": "03_william_tell_altdorf_apple.pdf",
+      "expected_keywords": [
+        "eighty",
+        "80"
+      ],
+      "answerable": true
+    },
+    {
+      "id": "Q04",
+      "question": "What is the name of the flat rock shelf on Lake Lucerne where William Tell leaped ashore?",
+      "expected_doc": "04_william_tell_hohle_gasse.pdf",
+      "expected_keywords": [
+        "Tellsplatte"
+      ],
+      "answerable": true
+    },
+    {
+      "id": "Q05",
+      "question": "Which three founding Forest Cantons swore the Ruetli Oath in 1291?",
+      "expected_doc": "05_ruetli_oath_1291.pdf",
+      "expected_keywords": [
+        "Uri",
+        "Schwyz",
+        "Unterwalden"
+      ],
+      "answerable": true
+    },
+    {
+      "id": "Q06",
+      "question": "How did the villagers of Uri outsmart the Devil on the Devil's Bridge?",
+      "expected_doc": "06_devils_bridge_schoellenen.pdf",
+      "expected_keywords": [
+        "billy goat",
+        "goat"
+      ],
+      "answerable": true
+    },
+    {
+      "id": "Q07",
+      "question": "Who carved the Lion Monument of Lucerne into the sandstone cliff, and what did Mark Twain call it?",
+      "expected_doc": "07_lion_of_lucerne_1821.pdf",
+      "expected_keywords": [
+        "Lukas Ahorn",
+        "mournful"
+      ],
+      "answerable": true
+    },
+    {
+      "id": "Q08",
+      "question": "What is the maximum gradient of the Pilatusbahn cogwheel railway opened in 1889?",
+      "expected_doc": "08_mount_pilatus_dragon_legend.pdf",
+      "expected_keywords": [
+        "48"
+      ],
+      "answerable": true
+    },
+    {
+      "id": "Q09",
+      "question": "On what exact date did Edward Whymper's rope team first reach the Matterhorn summit?",
+      "expected_doc": "09_matterhorn_first_ascent_1865.pdf",
+      "expected_keywords": [
+        "July 14, 1865",
+        "1865"
+      ],
+      "answerable": true
+    },
+    {
+      "id": "Q10",
+      "question": "How many signatures are required for a Swiss federal popular initiative vs. an optional referendum?",
+      "expected_doc": "10_swiss_federal_constitution_cantons.pdf",
+      "expected_keywords": [
+        "100,000",
+        "50,000"
+      ],
+      "answerable": true
+    },
+    {
+      "id": "Q11_TRAP",
+      "question": "What is Heidi's Swiss bank IBAN number in Zurich?",
+      "expected_doc": null,
+      "expected_keywords": [],
+      "answerable": false
+    },
+    {
+      "id": "Q12_TRAP",
+      "question": "How many Swiss francs did Hermann Gessler pay for his hat in Altdorf?",
+      "expected_doc": null,
+      "expected_keywords": [],
+      "answerable": false
+    },
+    {
+      "id": "Q13_TRAP",
+      "question": "What is the top speed in km/h of the Gotthard Base Tunnel train according to these documents?",
+      "expected_doc": null,
+      "expected_keywords": [],
+      "answerable": false
+    }
+  ]
+}

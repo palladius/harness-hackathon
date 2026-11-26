@@ -1,0 +1,16 @@
+# Harbor-compatible Task Specification (https://harborframework.com/)
+# Can be executed inside a Harbor container sandbox OR locally via ./evals/harbor-task/tests/test.sh
+
+version = "1.0"
+
+[metadata]
+author_name = "Riccardo Carlesso"
+difficulty = "medium"
+category = "cloud-architecture"
+tags = ["swiss-cloud", "graphviz", "multi-cloud", "harness-engineering", "hslu"]
+
+[verifier]
+timeout_sec = 60.0
+
+[agent]
+timeout_sec = 1800.0

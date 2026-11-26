@@ -1,0 +1,33 @@
+# Gitleaks configuration for hackathon secret hygiene
+[extend]
+useDefault = true
+
+[[rules]]
+id = "google-api-key"
+description = "Detects Google Cloud / Firebase / Gemini API keys (AIzaSy prefix)"
+regex = '''AIza[0-9A-Za-z\-_]{35}'''
+keywords = ["AIza"]
+
+[[rules]]
+id = "aws-access-key-custom"
+description = "Detects AWS access keys (AKIA prefix)"
+regex = '''AKIA[0-9A-Z]{16}'''
+keywords = ["AKIA"]
+
+[[rules]]
+id = "github-pat-custom"
+description = "Detects GitHub Personal Access Tokens (ghp_ prefix)"
+regex = '''ghp_[0-9a-zA-Z]{36}'''
+keywords = ["ghp_"]
+
+[[allowlists]]
+description = "Ignore safe config and documentation files"
+paths = [
+    '''\.gitleaks\.toml$''',
+    '''\.env\.example$''',
+    '''README\.md$'''
+]
+
+[[allowlists]]
+description = "Ignore known placeholder strings"
+stopwords = ["EXAMPLE", "example", "placeholder", "your_", "xxxx", "test-api-key", "YOUR_"]

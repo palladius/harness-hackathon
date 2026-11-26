@@ -1,0 +1,36 @@
+# Secrets & Credentials (NEVER commit these!)
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+serviceAccountKey.json
+service-account-credentials.json
+google-cloud-key.json
+*-firebase-adminsdk-*.json
+.aws/credentials
+aws-credentials.json
+*.tfstate
+*.tfstate.backup
+
+# Python & Node build/cache artifacts
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+node_modules/
+dist/
+build/
+
+# Hackathon local outputs (keep student rounds clean until ready to submit)
+slides/previews/
+round1-yolo/
+round2-harness/
+round1-pre-riccardo/
+round2-post-riccardo/
+RETRO.md

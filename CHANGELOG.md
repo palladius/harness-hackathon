@@ -1,0 +1,40 @@
+# Changelog
+
+All notable changes to `harness-hackathon` are documented here.
+
+## [0.4.1] - 2026-11-26
+
+- Pre-publish OSS code review & security hardening:
+  - Added hackathon secret hygiene starter kit (`.env.example`, `.gitleaks.toml`, `.pre-commit-config.yaml`, `.github/workflows/security-scan.yml`, hardened `.gitignore`).
+  - Fixed `grader.py --harbor-reward` to default its pass threshold to `95` when `--min-score` is omitted, and expanded Track 0 (`rag`) language detection (`.tsx`, `.jsx`, `.mjs`, `.sh`, `.java`, `.kt`, `.cs`, `.dart`).
+  - Updated `justfile` and `evals/harbor-task/tests/test.sh` defaults to `round1-pre-riccardo` / `round2-post-riccardo` and `--track <rag|arch|guggu>`.
+  - Hardened `tests/test_grader.py` (`11/11` unit tests passing, zero secrets, pure OSS hygiene) and added word-boundary guards to `grader.py` `SECRET_PATTERNS` so CSS classes like `.task-list-item-...` never trigger false positives.
+
+## [0.4.0] - 2026-11-26
+
+- Added auto-bootstrapping `AGENTS.md`, `CLAUDE.md`, and `GEMINI.md` at repo root so students can `git clone`, type `"Start!"`, answer **1 personalization question** (Track + Personal Twist + Round), and let their harness drive the entire hackathon.
+- Upgraded Exercise 2 to a **3-Tier Eval Chain**: Tier 1 Local Deterministic Evals -> Tier 2 `/goal` Harbor Binary Gate (`reward.txt = 1.0`) -> Tier 3 optional **`google-agents-cli`** Quality Flywheel (`agents-cli eval run` -> `eval analyze` -> `eval compare`, `github.com/google/agents-cli`).
+- Updated 6-slide standalone HTML deck (`slides/index.html`) and Storagify `hackathon.html`.
+
+## [0.3.0] - 2026-11-26
+
+- Refactored into a clean **3 Difficulty Tracks x 2 Rounds (Pre-Riccardo Blind Exam vs. Post-Riccardo + Evals)** orthogonal matrix (`tracks/track0-swiss-rag.md`, `tracks/track1-cloud-arch.md`, `tracks/track2-guggu-harness.md`).
+- Added **Track 0 (Starter)**: 10 Public-Domain Swiss Literature & Lore PDFs (`corpus/swiss-stories/01..10_*.pdf`) + 13-case `golden_qa.json` (10 factual + 3 anti-hallucination refusal traps) + `--track rag` grading in `grader.py`.
+- Added Blind Exam Pre-Riccardo vs. Post-Riccardo `--compare` scoreboard (Score 0..100, Harbor `reward.txt`, `SPEC.md`, `/learn` memory) and GitHub `@palladius` Issue / LinkedIn contact instructions.
+- Updated standalone 6-slide HTML deck (`slides/index.html`) and tests (`9/9` passing).
+
+## [0.2.0] - 2026-11-26
+
+- Added **Track 1B (Drag-and-Drop Canvas)** option inside Track 1 (Easy: Swiss Cloud Arch Diagram Draw for your favorite cloud).
+- Added **Track 2 (Boss Mode / Hard)**: `exercises/ex-boss-guggu.md` -- build your own Swiss-German UI Harness (**Guggu-Gstaeltli**, aka **Gugger-Gschirr**) in Electron (or local Web fallback) with synthesized Web Audio `"Guggu!"` turn chime.
+- Added **Harbor-compatible Eval Task** (`evals/harbor-task/{task.toml,instruction.md,tests/test.sh}`) and portable `/goal` autonomous loop prompt writing `reward.txt` (`0.0..1.0`).
+- Extended `grader.py` with `--track arch|guggu` and `--harbor-reward <path>` plus unit tests (`tests/test_grader.py`).
+- Upgraded standalone Marp HTML deck to **6 slides** (Easy vs. Boss Mode track picker + `/goal` Harbor Evals slide).
+
+## [0.1.0] - 2026-11-26
+
+- Initial release of the **Swiss Cloud Arch Diagram Draw** Harness Engineering Hackathon.
+- Added 5 multi-cloud Swiss enterprise architecture scenarios (`scenarios/01..05_*.md`).
+- Added agent-readable `exercises/ex1-yolo.md` (Round 1 baseline) and `exercises/ex2-harness.md` (Round 2 with 6 composable Harness Engineering tricks).
+- Added zero-dependency deterministic `grader.py` (`0..100` score + `--compare` Round 1 vs Round 2 scoreboard) and unit tests (`tests/test_grader.py`).
+- Added 5-slide standalone HTML Marp deck (`slides/slides.md` -> `slides/index.html`).
