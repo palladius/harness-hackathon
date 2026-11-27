@@ -2,6 +2,10 @@
 
 All notable changes to `harness-hackathon` are documented here.
 
+## [0.6.1] - 2026-11-27
+
+- Added an above-the-fold 3-column clickable NanoBanana Pro target preview gallery right at the top of `README.md` linking directly to Track 0 (`Prompts 0.1/0.2`), Track 1 (`Prompts 1.1/1.2`), and Track 2 (`Prompts 2.1/2.2`).
+
 ## [0.6.0] - 2026-11-27
 
 - Reorganized `README.md` into an unmistakable **`3 Tracks x 2 Rounds = 6 Ready-to-Copy Prompts`** layout (`Prompts 0.1/0.2`, `1.1/1.2`, `2.1/2.2`) with zero placeholders to edit, plus 1-line `agy -i` launch commands.

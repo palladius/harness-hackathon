@@ -5,6 +5,35 @@
 Built for **HSLU `CAS Cloud Architecture` — Module M3 (*AI/ML Solutions with the Cloud*, 27 Nov 2026)**.
 Everything — all 3 PRDs, **10 authentic multi-page Swiss PDFs (82 pages!)**, 5 enterprise cloud scenarios, `grader.py`, and the Harbor eval task — is **bundled offline right inside this repo**.
 
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <a href="#track-0-swiss-stories-manual-rag-starter">
+        <img src="assets/preview-track0-swiss-rag.jpg" alt="Track 0: Swiss Stories Manual RAG" width="100%" /><br/>
+        <b>Track 0: Swiss Stories RAG</b><br/>
+        <sub>Starter (45-60m) | 82-page PDFs</sub><br/>
+        <code>Prompts 0.1 &amp; 0.2</code>
+      </a>
+    </td>
+    <td align="center" width="33%">
+      <a href="#track-1-swiss-cloud-arch-diagram-draw-medium">
+        <img src="assets/preview-track1-cloud-arch.jpg" alt="Track 1: Swiss Cloud Arch Studio" width="100%" /><br/>
+        <b>Track 1: Swiss Cloud Studio</b><br/>
+        <sub>Medium (1.5-2.5h) | Drag &amp; Drop + X-Ray</sub><br/>
+        <code>Prompts 1.1 &amp; 1.2</code>
+      </a>
+    </td>
+    <td align="center" width="33%">
+      <a href="#track-2-guggu-gstaeltli-swiss-ui-harness-boss-mode">
+        <img src="assets/preview-track2-guggu-harness.jpg" alt="Track 2: Guggu-Gstaeltli Swiss Cuckoo Harness" width="100%" /><br/>
+        <b>Track 2: Guggu-Gstaeltli</b><br/>
+        <sub>Boss Mode (3-5h) | Swiss-German Cuckoo</sub><br/>
+        <code>Prompts 2.1 &amp; 2.2</code>
+      </a>
+    </td>
+  </tr>
+</table>
+
 ---
 
 ## How It Works in 30 Seconds (`3 Tracks x 2 Rounds = 6 Prompts`)
@@ -52,7 +81,9 @@ claude     # Claude Code
 
 ---
 
-## Track 0: Swiss Stories Manual RAG (Starter · 45-60 min)
+## Track 0: Swiss Stories Manual RAG (Starter)
+
+> **Estimated Time**: `45-60 min` | **Grader Flag**: `--track rag`
 
 Build a transparent, manual RAG system (chunking + TF-IDF/BM25 or embeddings + strict page citations + anti-hallucination refusal) over **10 authentic multi-page Swiss PDFs (82 pages, ~331k chars)** in [`corpus/swiss-stories/`](corpus/swiss-stories/): *Heidi*, *William Tell*, *Ruetli 1291*, *Devil's Bridge*, *Mark Twain's Lion of Lucerne*, *Mount Pilatus / Pilatusbahn 48%*, *Edward Whymper's 1865 Matterhorn*, and *Swiss Federal Constitution*.
 Full stack-agnostic PRD: [`tracks/track0-swiss-rag.md`](tracks/track0-swiss-rag.md).
@@ -90,7 +121,9 @@ Rebuild Track 0 (Swiss Stories Manual RAG) cleanly from scratch inside ./round2-
 
 ---
 
-## Track 1: Swiss Cloud Arch Diagram Draw (Medium · 1.5-2.5 h)
+## Track 1: Swiss Cloud Arch Diagram Draw (Medium)
+
+> **Estimated Time**: `1.5-2.5 h` | **Grader Flag**: `--track arch`
 
 Build either **Option 1A (Headless CLI `.dot` Compiler)** OR **Option 1B (Interactive Drag-and-Drop Cloud Canvas)** for your favorite cloud (`GCP europe-west6`, `AWS eu-central-2`, `Azure Switzerland North`) across 5 regulated Swiss enterprise scenarios ([`scenarios/`](scenarios/)) with a **Red Bottleneck & SPOF X-Ray** and `ARCHITECTURE.md` compliance spec.
 Full stack-agnostic PRD: [`tracks/track1-cloud-arch.md`](tracks/track1-cloud-arch.md).
@@ -128,7 +161,9 @@ Rebuild Track 1 (Swiss Cloud Arch Diagram Draw, same scenario as Round 1) cleanl
 
 ---
 
-## Track 2: `Guggu-Gstaeltli` Swiss UI Harness (Boss Mode · 3-5 h)
+## Track 2: `Guggu-Gstaeltli` Swiss UI Harness (Boss Mode)
+
+> **Estimated Time**: `3-5 h` | **Grader Flag**: `--track guggu`
 
 Build your own **Swiss-branded (`#D52B1E` + Swiss Cross)** multi-conversation AI coding UI Harness that speaks authentic **Schwiizerduetsch** (*"Grueezi!"*, *"Am schaffe..."*, *"Alli Tests grueen!"*) and plays a synthesized **`"Guggu! Guggu!"`** Cuckoo chime (`E5 -> C#5` Web Audio + animated cuckoo bird + `"Stumm"` Mute button) whenever **ANY** parallel conversation thread waits for your human turn!
 Full stack-agnostic PRD: [`tracks/track2-guggu-harness.md`](tracks/track2-guggu-harness.md).
