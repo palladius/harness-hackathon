@@ -4,6 +4,8 @@
 > **Structure**: Pure **Product Specification (`PRD / SPEC`)** decoupled from the **Optional Tech Stack Menu** below.
 > **Works identically in**: **Round 1 (Pre-Riccardo)** inside `./round1-pre-riccardo/` AND **Round 2 (Post-Riccardo + Evals)** inside `./round2-post-riccardo/`!
 
+![Target Preview: Track 0 — Swiss Stories Manual RAG Studio](../assets/preview-track0-swiss-rag.jpg)
+
 ---
 
 ## 1. Bundled Offline Corpus (`corpus/swiss-stories/` — 82 Pages Across 10 Multi-Page PDFs!)

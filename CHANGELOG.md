@@ -2,6 +2,11 @@
 
 All notable changes to `harness-hackathon` are documented here.
 
+## [0.6.0] - 2026-11-27
+
+- Reorganized `README.md` into an unmistakable **`3 Tracks x 2 Rounds = 6 Ready-to-Copy Prompts`** layout (`Prompts 0.1/0.2`, `1.1/1.2`, `2.1/2.2`) with zero placeholders to edit, plus 1-line `agy -i` launch commands.
+- Added 3 NanoBanana Pro motivational target-preview mockups in `assets/` (`preview-track0-swiss-rag.jpg`, `preview-track1-cloud-arch.jpg`, `preview-track2-guggu-harness.jpg`), embedded across `README.md`, `tracks/track0..2`, and a new **Target Previews Gallery** slide in the standalone HTML deck (`slides/index.html`, now 7 slides).
+
 ## [0.5.0] - 2026-11-27
 
 - Upgraded `corpus/swiss-stories/` from 1-page summaries to **10 authentic, multi-page Swiss literature & historical chronicle PDFs (82 pages total, ~331,000 chars, ~287 KB)** compiled from Public Domain Wikisource classics (*Heidi* 1922 Ch. I-II & XII-XIII, Mark Twain *A Tramp Abroad* Ch. XXVI-XXVII, Edward Whymper *Scrambles Amongst the Alps* Ch. XXI-XXII, 1911 *Encyclopaedia Britannica*, W. D. McCrackan) and CC BY-SA 4.0 Wikipedia chronicles.

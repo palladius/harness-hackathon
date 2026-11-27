@@ -5,6 +5,8 @@
 > **Structure**: Pure **Product Specification (`PRD / SPEC`)** decoupled from the **Optional Tech Stack Menu** below.
 > **Works identically in**: **Round 1 (Pre-Riccardo)** inside `./round1-pre-riccardo/` AND **Round 2 (Post-Riccardo + Evals)** inside `./round2-post-riccardo/`!
 
+![Target Preview: Track 2 — Guggu-Gstaeltli Swiss-German Cuckoo UI Harness](../assets/preview-track2-guggu-harness.jpg)
+
 ---
 
 ## 1. Product Specification (PRD / SPEC -- Tech-Stack Agnostic)

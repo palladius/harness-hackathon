@@ -332,7 +332,35 @@ Every student -- whether PM, Cloud Architect, or Staff Engineer -- picks ONE of 
 </div>
 
 <!-- Speaker notes:
-Three difficulty ramps so nobody is bored and nobody is lost! Starter (Track 0) uses 10 real Public-Domain Swiss literature PDFs + 3 anti-hallucination trap questions; Medium (Track 1) is Cloud Architect heaven (CLI or Drag-and-Drop); Boss Mode (Track 2) is our hilarious Guggu-Gstaeltli / Gugger-Gschirr Swiss-German Cuckoo Harness!
+Three difficulty ramps so nobody is bored and nobody is lost! Starter (Track 0) uses 10 real multi-page Swiss literature PDFs (82 pages!) + 3 anti-hallucination trap questions; Medium (Track 1) is Cloud Architect heaven (CLI or Drag-and-Drop); Boss Mode (Track 2) is our hilarious Guggu-Gstaeltli / Gugger-Gschirr Swiss-German Cuckoo Harness!
+-->
+
+---
+
+# What You Will Build: 3 Target Previews
+
+<div class="sub">Pick <strong>1 track</strong>, run <strong>2 rounds</strong> (Pre-Riccardo vs. Post-Riccardo) — all <strong>2 &times; 3 = 6 copy-paste prompts</strong> are right in <span class="mono-pill">README.md</span>!</div>
+
+<div class="grid3">
+  <div class="card green" style="padding:11px;">
+    <img src="../assets/preview-track0-swiss-rag.jpg" alt="Track 0 Preview" style="width:100%;border-radius:8px;border:1px solid #e2e8f0;display:block;margin-bottom:8px;" />
+    <div class="card-title" style="font-size:15.5px;">Track 0 · Swiss Stories RAG</div>
+    <div class="card-body" style="font-size:13.5px;">82-page PDF citations + zero-hallucination refusal shield (<strong>Prompts 0.1 &amp; 0.2</strong>).</div>
+  </div>
+  <div class="card amber" style="padding:11px;">
+    <img src="../assets/preview-track1-cloud-arch.jpg" alt="Track 1 Preview" style="width:100%;border-radius:8px;border:1px solid #e2e8f0;display:block;margin-bottom:8px;" />
+    <div class="card-title" style="font-size:15.5px;">Track 1 · Swiss Cloud Studio</div>
+    <div class="card-body" style="font-size:13.5px;">Multi-cloud drag-and-drop canvas + Red Bottleneck X-Ray (<strong>Prompts 1.1 &amp; 1.2</strong>).</div>
+  </div>
+  <div class="card red" style="padding:11px;">
+    <img src="../assets/preview-track2-guggu-harness.jpg" alt="Track 2 Preview" style="width:100%;border-radius:8px;border:1px solid #e2e8f0;display:block;margin-bottom:8px;" />
+    <div class="card-title" style="font-size:15.5px;">Track 2 · Guggu-Gstaeltli</div>
+    <div class="card-body" style="font-size:13.5px;">Schwiizerduetsch multi-thread harness + Cuckoo turn chime (<strong>Prompts 2.1 &amp; 2.2</strong>).</div>
+  </div>
+</div>
+
+<!-- Speaker notes:
+Show the class what their finished Post-Riccardo build can look like! Each of the 3 tracks has two exact copy-paste prompts in README.md (Prompt X.1 Pre-Riccardo Blind Exam and Prompt X.2 Post-Riccardo with Superpowers + Harbor Evals).
 -->
 
 ---
