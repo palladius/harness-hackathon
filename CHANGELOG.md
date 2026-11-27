@@ -2,6 +2,11 @@
 
 All notable changes to `harness-hackathon` are documented here.
 
+## [0.6.2] - 2026-11-27
+
+- Added top-of-README clickable 7-slide deck links (`https://palladius.github.io/harness-hackathon/`, Storagify mirror, and `slides/slides.md`).
+- Added `.github/workflows/pages.yml` to automatically deploy the standalone 7-slide deck and preview images to GitHub Pages (`palladius.github.io/harness-hackathon`).
+
 ## [0.6.1] - 2026-11-27
 
 - Added an above-the-fold 3-column clickable NanoBanana Pro target preview gallery right at the top of `README.md` linking directly to Track 0 (`Prompts 0.1/0.2`), Track 1 (`Prompts 1.1/1.2`), and Track 2 (`Prompts 2.1/2.2`).

@@ -1,5 +1,7 @@
 # HSLU Harness Hackathon: 3 Tracks x 2 Rounds (6 Ready-to-Copy Prompts!)
 
+> **Live 7-Slide Deck**: **[Open Slides on GitHub Pages (`palladius.github.io/harness-hackathon`)](https://palladius.github.io/harness-hackathon/)** · [Storagify Mirror](https://storage.googleapis.com/palladius-genai-storagify/hslu/2026-11-27-m3-v1.0.2/hackathon-slides.html) · [Markdown Source](slides/slides.md) · [Hackathon Web Hub](https://storage.googleapis.com/palladius-genai-storagify/hslu/2026-11-27-m3-v1.0.2/hackathon.html)
+
 > **Same challenge. Same AI coding harness (`Antigravity CLI (agy)`, `Gemini CLI`, `Claude Code`, or `OpenAI Codex`). Pick 1 of 3 difficulty tracks, build it TWICE (`Pre-Riccardo` vs. `Post-Riccardo`), and prove your objective `0..100` + Harbor `reward = 1.0` jump!**
 
 Built for **HSLU `CAS Cloud Architecture` — Module M3 (*AI/ML Solutions with the Cloud*, 27 Nov 2026)**.
