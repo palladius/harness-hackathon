@@ -65,7 +65,7 @@ and help me publish to GitHub + ping @palladius on a GitHub Issue!
 ## Local Commands (`justfile`) & Public Resources
 
 - **Run grader & unit tests locally**: `just test` | `just grade round1-pre-riccardo rag` | `just compare round1-pre-riccardo round2-post-riccardo rag`
-- **Bundled 10 Swiss PDFs + `golden_qa.json`**: [`corpus/swiss-stories/`](corpus/swiss-stories/) *(10 lightweight 1-page generated PDFs summarizing public-domain Swiss literature & chronicles — instant offline parsing, zero copyright issues!)*
+- **Bundled 10 Multi-Page Swiss PDFs + `golden_qa.json`**: [`corpus/swiss-stories/`](corpus/swiss-stories/) *(82 real pages, ~331k chars, ~287 KB total — authentic Wikisource Public Domain classics & Wikipedia CC BY-SA 4.0 chronicles: Heidi, William Tell, Mark Twain in Lucerne, Edward Whymper on the Matterhorn 1865, Ruetli 1291, Pilatusbahn, Swiss Constitution!)*
 - **Harbor Eval Task**: [`evals/harbor-task/`](evals/harbor-task/task.toml) | <https://harborframework.com/>
 - **Live Web Hub & 6-Slide Deck (Browser Preview)**: [Hackathon Hub](https://storage.googleapis.com/palladius-genai-storagify/hslu/2026-11-27-m3-v1.0.2/hackathon.html) | [6-Slide Deck](https://storage.googleapis.com/palladius-genai-storagify/hslu/2026-11-27-m3-v1.0.2/hackathon-slides.html) *(also bundled locally in [`slides/index.html`](slides/index.html))*
 - **Antigravity CLI (`agy`)**: <https://antigravity.google/download> | **Google Agents CLI (`agents-cli`)**: <https://github.com/google/agents-cli>

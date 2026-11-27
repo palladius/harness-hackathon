@@ -42,6 +42,8 @@ class TestGrader(unittest.TestCase):
         corpus = REPO_ROOT / "corpus" / "swiss-stories"
         pdfs = sorted(corpus.glob("*.pdf"))
         self.assertEqual(len(pdfs), 10)
+        for pdf in pdfs:
+            self.assertGreater(pdf.stat().st_size, 10_000, f"{pdf.name} should be a substantial multi-page PDF")
         golden = json.loads((corpus / "golden_qa.json").read_text(encoding="utf-8"))
         qs = golden["questions"]
         self.assertEqual(len(qs), 13)

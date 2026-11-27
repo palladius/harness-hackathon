@@ -2,6 +2,12 @@
 
 All notable changes to `harness-hackathon` are documented here.
 
+## [0.5.0] - 2026-11-27
+
+- Upgraded `corpus/swiss-stories/` from 1-page summaries to **10 authentic, multi-page Swiss literature & historical chronicle PDFs (82 pages total, ~331,000 chars, ~287 KB)** compiled from Public Domain Wikisource classics (*Heidi* 1922 Ch. I-II & XII-XIII, Mark Twain *A Tramp Abroad* Ch. XXVI-XXVII, Edward Whymper *Scrambles Amongst the Alps* Ch. XXI-XXII, 1911 *Encyclopaedia Britannica*, W. D. McCrackan) and CC BY-SA 4.0 Wikipedia chronicles.
+- Updated `corpus/swiss-stories/golden_qa.json` (`v2`) so all 10 needle-in-a-haystack factual questions and 3 anti-hallucination traps match verbatim multi-page facts across pages 1..12 (with real near-miss Gotthard Base Tunnel trap!).
+- Added multi-page PDF size guard in `tests/test_grader.py` and rebuilt the 6-slide HTML deck (`slides/index.html`).
+
 ## [0.4.2] - 2026-11-26
 
 - Made `AGENTS.md` the single canonical harness instruction file; replaced standalone `CLAUDE.md` and `GEMINI.md` files with thin relative symlinks (`CLAUDE.md -> AGENTS.md`, `GEMINI.md -> AGENTS.md`).

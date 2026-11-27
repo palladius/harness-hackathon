@@ -1,12 +1,16 @@
 {
-  "dataset_name": "swiss-stories-10pdf-golden-v1",
-  "description": "10 grounded factual questions + 3 unanswerable anti-hallucination traps over the 10 Swiss PDFs.",
+  "dataset_name": "swiss-stories-10pdf-multipage-golden-v2",
+  "description": "10 grounded needle-in-a-haystack factual questions + 3 unanswerable anti-hallucination traps over 10 multi-page Swiss literature & chronicle PDFs (82 pages total).",
   "questions": [
     {
       "id": "Q01",
-      "question": "What are the names of Alp-Oehi's two goats in Heidi?",
+      "question": "In Heidi, what are the names of Alm-Uncle's white and brown goats (English and/or original German)?",
       "expected_doc": "01_heidi_alps_mayenfeld.pdf",
       "expected_keywords": [
+        "Little Swan",
+        "Little Bear"
+      ],
+      "accepted_aliases": [
         "Schwaenli",
         "Baerli"
       ],
@@ -14,36 +18,36 @@
     },
     {
       "id": "Q02",
-      "question": "Why did Doctor Classen insist that Heidi leave Frankfurt immediately?",
+      "question": "In Frankfurt, what medical diagnosis does Herr Sesemann's old friend the Doctor give for Heidi's nocturnal wandering, and why must she leave immediately?",
       "expected_doc": "02_heidi_frankfurt_clara.pdf",
       "expected_keywords": [
         "homesickness",
-        "sleepwalking"
+        "sleep"
       ],
       "answerable": true
     },
     {
       "id": "Q03",
-      "question": "From how many paces did William Tell have to shoot the apple off his son Walter's head?",
+      "question": "In Friedrich Schiller's play William Tell, from what distance does young Walter boast his father can hit an apple?",
       "expected_doc": "03_william_tell_altdorf_apple.pdf",
       "expected_keywords": [
-        "eighty",
-        "80"
+        "hundred yards"
       ],
       "answerable": true
     },
     {
       "id": "Q04",
-      "question": "What is the name of the flat rock shelf on Lake Lucerne where William Tell leaped ashore?",
+      "question": "What is the name of the rock slab on Lake Lucerne where William Tell leaped ashore from Gessler's boat, and what is the sunken lane where he ambushed Gessler?",
       "expected_doc": "04_william_tell_hohle_gasse.pdf",
       "expected_keywords": [
-        "Tellsplatte"
+        "Tellsplatte",
+        "Hohle Gasse"
       ],
       "answerable": true
     },
     {
       "id": "Q05",
-      "question": "Which three founding Forest Cantons swore the Ruetli Oath in 1291?",
+      "question": "Which three founding Forest Cantons formed the alliance commemorated by the Federal Charter of 1291 and the Ruetli Oath?",
       "expected_doc": "05_ruetli_oath_1291.pdf",
       "expected_keywords": [
         "Uri",
@@ -54,17 +58,16 @@
     },
     {
       "id": "Q06",
-      "question": "How did the villagers of Uri outsmart the Devil on the Devil's Bridge?",
+      "question": "In the Swiss folklore of the Devil's Bridge (Teufelsbruecke) in the Schoellenen Gorge, which animal did the villagers send across the bridge to outsmart the Devil?",
       "expected_doc": "06_devils_bridge_schoellenen.pdf",
       "expected_keywords": [
-        "billy goat",
         "goat"
       ],
       "answerable": true
     },
     {
       "id": "Q07",
-      "question": "Who carved the Lion Monument of Lucerne into the sandstone cliff, and what did Mark Twain call it?",
+      "question": "Who designed and who carved the Lion Monument of Lucerne (1820-21), and how did Mark Twain describe it in A Tramp Abroad?",
       "expected_doc": "07_lion_of_lucerne_1821.pdf",
       "expected_keywords": [
         "Lukas Ahorn",
@@ -74,26 +77,26 @@
     },
     {
       "id": "Q08",
-      "question": "What is the maximum gradient of the Pilatusbahn cogwheel railway opened in 1889?",
+      "question": "What is the maximum gradient of the Pilatusbahn cogwheel railway opened on 4 June 1889?",
       "expected_doc": "08_mount_pilatus_dragon_legend.pdf",
       "expected_keywords": [
-        "48"
+        "48%"
       ],
       "answerable": true
     },
     {
       "id": "Q09",
-      "question": "On what exact date did Edward Whymper's rope team first reach the Matterhorn summit?",
+      "question": "On what exact date did Edward Whymper's party first reach the summit of the Matterhorn, and how long did they stay on the summit?",
       "expected_doc": "09_matterhorn_first_ascent_1865.pdf",
       "expected_keywords": [
-        "July 14, 1865",
-        "1865"
+        "14 July 1865",
+        "hour"
       ],
       "answerable": true
     },
     {
       "id": "Q10",
-      "question": "How many signatures are required for a Swiss federal popular initiative vs. an optional referendum?",
+      "question": "How many citizen signatures are required for a Swiss federal popular initiative vs. an optional referendum?",
       "expected_doc": "10_swiss_federal_constitution_cantons.pdf",
       "expected_keywords": [
         "100,000",
@@ -110,14 +113,14 @@
     },
     {
       "id": "Q12_TRAP",
-      "question": "How many Swiss francs did Hermann Gessler pay for his hat in Altdorf?",
+      "question": "How many Swiss francs did Albrecht Gessler pay for his hat in Altdorf?",
       "expected_doc": null,
       "expected_keywords": [],
       "answerable": false
     },
     {
       "id": "Q13_TRAP",
-      "question": "What is the top speed in km/h of the Gotthard Base Tunnel train according to these documents?",
+      "question": "What is the maximum operating speed in km/h of passenger trains inside the Gotthard Base Tunnel according to these documents?",
       "expected_doc": null,
       "expected_keywords": [],
       "answerable": false

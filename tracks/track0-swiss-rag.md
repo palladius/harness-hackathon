@@ -6,21 +6,22 @@
 
 ---
 
-## 1. Bundled Offline Corpus (`corpus/swiss-stories/` — Already in This Repo!)
+## 1. Bundled Offline Corpus (`corpus/swiss-stories/` — 82 Pages Across 10 Multi-Page PDFs!)
 
-All **10 PDFs + `golden_qa.json`** are checked directly into [`corpus/swiss-stories/`](../corpus/swiss-stories/) (~44 KB total, 100% offline-ready after `git clone`!).
-Each file is a real, parseable 1-page PDF (generated from concise public-domain summaries of Swiss classics and historical chronicles — zero copyright risk, instant `pypdf`/`pdftotext` ingestion; feel free to add longer Project Gutenberg PDFs as an extra stretch goal!):
-- `01_heidi_alps_mayenfeld.pdf` (Johanna Spyri, *Heidi* -- Alp-Oehi, Schwaenli & Baerli)
-- `02_heidi_frankfurt_clara.pdf` (*Heidi* -- Frankfurt, Doctor Classen, Clara)
-- `03_william_tell_altdorf_apple.pdf` (Friedrich Schiller, *Wilhelm Tell* -- 80 paces, Altdorf)
-- `04_william_tell_hohle_gasse.pdf` (*Wilhelm Tell* -- Tellsplatte, Hohle Gasse)
-- `05_ruetli_oath_1291.pdf` (Federal Charter of 1291 -- Uri, Schwyz, Unterwalden)
-- `06_devils_bridge_schoellenen.pdf` (Devil's Bridge -- billy goat, Teufelsstein)
-- `07_lion_of_lucerne_1821.pdf` (Lion Monument -- Lukas Ahorn, Mark Twain)
-- `08_mount_pilatus_dragon_legend.pdf` (Mount Pilatus -- 2,128m, Pilatusbahn 48%)
-- `09_matterhorn_first_ascent_1865.pdf` (Matterhorn -- Edward Whymper, July 14, 1865)
-- `10_swiss_federal_constitution_cantons.pdf` (1848 Constitution, 26 cantons, 50k/100k signatures)
-- **`golden_qa.json`**: 10 grounded factual questions (`Q01..Q10`) + **3 unanswerable anti-hallucination trap questions (`Q11_TRAP..Q13_TRAP`)**!
+All **10 multi-page PDFs + `golden_qa.json`** are checked directly into [`corpus/swiss-stories/`](../corpus/swiss-stories/) (**82 pages, ~331,000 characters, ~287 KB total**, 100% offline-ready after `git clone`!).
+Each file is a real, multi-page (5 to 12 pages) publication-formatted PDF compiled from authentic **Public Domain Wikisource classics** (*Heidi* 1922 Ch. I-II & XII-XIII, Mark Twain's *A Tramp Abroad* Ch. XXVI-XXVII, Edward Whymper's *Scrambles Amongst the Alps* Ch. XXI-XXII, 1911 *Encyclopaedia Britannica*, *The Rise of the Swiss Republic*) and **CC BY-SA 4.0 Wikipedia historical chronicles** — too large to stuff blindly into a tiny prompt, forcing real PDF page parsing, overlapping chunking, and page-level citations (`[filename.pdf, p. X]`):
+
+- `01_heidi_alps_mayenfeld.pdf` (**10 pages** -- Johanna Spyri, *Heidi* Ch. I & II: Maienfeld, Alm-Uncle, Little Swan & Little Bear / Schwaenli & Baerli)
+- `02_heidi_frankfurt_clara.pdf` (**10 pages** -- Johanna Spyri, *Heidi* Ch. XII & XIII: Frankfurt, Clara Sesemann, the Doctor, homesickness & sleepwalking)
+- `03_william_tell_altdorf_apple.pdf` (**6 pages** -- 1911 Britannica & Schiller's *William Tell* 1804 play: Altdorf, Gessler's cap, hundred-yard apple boast)
+- `04_william_tell_hohle_gasse.pdf` (**8 pages** -- Lake Lucerne storm, Tellsplatte leap, Hohle Gasse ambush, White Book of Sarnen)
+- `05_ruetli_oath_1291.pdf` (**6 pages** -- Federal Charter of 1291, Ruetli Meadow, McCrackan *Rise of the Swiss Republic*: Uri, Schwyz, Unterwalden)
+- `06_devils_bridge_schoellenen.pdf` (**5 pages** -- Schoellenen Gorge, Devil's Bridge goat folklore, St. Gotthard Pass & Suvorov 1799)
+- `07_lion_of_lucerne_1821.pdf` (**8 pages** -- Lion Monument by Thorvaldsen & Lukas Ahorn + Mark Twain *A Tramp Abroad* Ch. XXVI verbatim)
+- `08_mount_pilatus_dragon_legend.pdf` (**8 pages** -- Mount Pilatus, 48% Pilatusbahn 1889 + Mark Twain *A Tramp Abroad* Ch. XXVII verbatim)
+- `09_matterhorn_first_ascent_1865.pdf` (**12 pages** -- Edward Whymper *Scrambles Amongst the Alps* Ch. XXI & XXII verbatim: 14 July 1865 summit & tragic descent)
+- `10_swiss_federal_constitution_cantons.pdf` (**9 pages** -- 1848 Constitution, 26 cantons, 100k popular initiative / 50k optional referendum, 1911 Britannica)
+- **`golden_qa.json`**: 10 needle-in-a-haystack factual questions (`Q01..Q10`) + **3 unanswerable anti-hallucination trap questions (`Q11_TRAP..Q13_TRAP`)** (including a classic near-miss trap on the Gotthard Base Tunnel speed!).
 
 ---
 
